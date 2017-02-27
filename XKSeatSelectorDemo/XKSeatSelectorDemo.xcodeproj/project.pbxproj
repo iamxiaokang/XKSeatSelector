@@ -14,6 +14,12 @@
 		A142D9181E63D40E008BF854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A142D9171E63D40E008BF854 /* Assets.xcassets */; };
 		A142D91B1E63D40E008BF854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A142D9191E63D40E008BF854 /* LaunchScreen.storyboard */; };
 		A142D9261E63D40E008BF854 /* XKSeatSelectorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A142D9251E63D40E008BF854 /* XKSeatSelectorDemoTests.m */; };
+		A142D94E1E63DE14008BF854 /* seat_available@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A142D9451E63DE14008BF854 /* seat_available@2x.png */; };
+		A142D94F1E63DE14008BF854 /* seat_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A142D9461E63DE14008BF854 /* seat_disabled@2x.png */; };
+		A142D9501E63DE14008BF854 /* seat_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A142D9471E63DE14008BF854 /* seat_selected@2x.png */; };
+		A142D9511E63DE14008BF854 /* XKSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = A142D9491E63DE14008BF854 /* XKSeat.m */; };
+		A142D9521E63DE14008BF854 /* XKSeatSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A142D94B1E63DE14008BF854 /* XKSeatSelector.m */; };
+		A142D9531E63DE14008BF854 /* XKSeatsPickerIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = A142D94D1E63DE14008BF854 /* XKSeatsPickerIndexView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		A142D9211E63D40E008BF854 /* XKSeatSelectorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKSeatSelectorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A142D9251E63D40E008BF854 /* XKSeatSelectorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKSeatSelectorDemoTests.m; sourceTree = "<group>"; };
 		A142D9271E63D40E008BF854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A142D9451E63DE14008BF854 /* seat_available@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seat_available@2x.png"; sourceTree = "<group>"; };
+		A142D9461E63DE14008BF854 /* seat_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seat_disabled@2x.png"; sourceTree = "<group>"; };
+		A142D9471E63DE14008BF854 /* seat_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seat_selected@2x.png"; sourceTree = "<group>"; };
+		A142D9481E63DE14008BF854 /* XKSeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKSeat.h; sourceTree = "<group>"; };
+		A142D9491E63DE14008BF854 /* XKSeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKSeat.m; sourceTree = "<group>"; };
+		A142D94A1E63DE14008BF854 /* XKSeatSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKSeatSelector.h; sourceTree = "<group>"; };
+		A142D94B1E63DE14008BF854 /* XKSeatSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKSeatSelector.m; sourceTree = "<group>"; };
+		A142D94C1E63DE14008BF854 /* XKSeatsPickerIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKSeatsPickerIndexView.h; sourceTree = "<group>"; };
+		A142D94D1E63DE14008BF854 /* XKSeatsPickerIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKSeatsPickerIndexView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,7 @@
 		A142D90A1E63D40E008BF854 /* XKSeatSelectorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A142D9441E63DE14008BF854 /* XKSeatSelector */,
 				A142D90E1E63D40E008BF854 /* AppDelegate.h */,
 				A142D90F1E63D40E008BF854 /* AppDelegate.m */,
 				A142D9111E63D40E008BF854 /* ViewController.h */,
@@ -109,6 +125,22 @@
 				A142D9271E63D40E008BF854 /* Info.plist */,
 			);
 			path = XKSeatSelectorDemoTests;
+			sourceTree = "<group>";
+		};
+		A142D9441E63DE14008BF854 /* XKSeatSelector */ = {
+			isa = PBXGroup;
+			children = (
+				A142D9451E63DE14008BF854 /* seat_available@2x.png */,
+				A142D9461E63DE14008BF854 /* seat_disabled@2x.png */,
+				A142D9471E63DE14008BF854 /* seat_selected@2x.png */,
+				A142D9481E63DE14008BF854 /* XKSeat.h */,
+				A142D9491E63DE14008BF854 /* XKSeat.m */,
+				A142D94A1E63DE14008BF854 /* XKSeatSelector.h */,
+				A142D94B1E63DE14008BF854 /* XKSeatSelector.m */,
+				A142D94C1E63DE14008BF854 /* XKSeatsPickerIndexView.h */,
+				A142D94D1E63DE14008BF854 /* XKSeatsPickerIndexView.m */,
+			);
+			path = XKSeatSelector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +227,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A142D9501E63DE14008BF854 /* seat_selected@2x.png in Resources */,
 				A142D91B1E63D40E008BF854 /* LaunchScreen.storyboard in Resources */,
 				A142D9181E63D40E008BF854 /* Assets.xcassets in Resources */,
 				A142D9161E63D40E008BF854 /* Main.storyboard in Resources */,
+				A142D94F1E63DE14008BF854 /* seat_disabled@2x.png in Resources */,
+				A142D94E1E63DE14008BF854 /* seat_available@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +253,9 @@
 				A142D9131E63D40E008BF854 /* ViewController.m in Sources */,
 				A142D9101E63D40E008BF854 /* AppDelegate.m in Sources */,
 				A142D90D1E63D40E008BF854 /* main.m in Sources */,
+				A142D9511E63DE14008BF854 /* XKSeat.m in Sources */,
+				A142D9521E63DE14008BF854 /* XKSeatSelector.m in Sources */,
+				A142D9531E63DE14008BF854 /* XKSeatsPickerIndexView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
