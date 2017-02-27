@@ -63,7 +63,7 @@ static const CGFloat kRowIndexWidth = 15;
 	[self addSubview:zoomable_view];
 	
 	_rowIndexView = ({
-		XKSeatsPickerIndexView* indexView = [[XKSeatsPickerIndexView alloc] initWithFrame:CGRectMake(self.contentOffset.x / self.zoomScale + 5, 0, kRowIndexWidth, 17 * 20)];
+		XKSeatsPickerIndexView* indexView = [[XKSeatsPickerIndexView alloc] initWithFrame:CGRectMake(self.contentOffset.x / self.zoomScale + 5, 0, kRowIndexWidth, 17 * 30)];
 		indexView.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.6];
 		indexView.indexList = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"",@"7",@"8",@"9",@"10",@"11",@"12",@"",@"13",@"14",@"15", nil];
 		[zoomable_view addSubview:indexView];
